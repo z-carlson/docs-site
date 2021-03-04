@@ -1,0 +1,27 @@
+toc:
+  - heading: Getting Started
+    subitems:
+      - name: Overview
+        path: /get-started/overview
+      - name: Setup
+        path: /get-started/setup
+  - heading: Tutorials
+    subitems:
+      - name: Overview
+        path: /how-to/overview
+      - name: How to boil an egg
+        path: /how-to/boil-egg
+      - name: My First Post
+        path: /tutorials/first-post
+  - heading: How-to Guides
+    subitems:
+      - name: Overview
+        path: /how-to/overview
+      - name: How to boil an egg
+        path: /how-to/boil-egg
+  - heading: References
+    subitems:
+      - name: running a blog
+        path: /configure/libraries
+      - name: running a blog
+        path: /configure/libraries
