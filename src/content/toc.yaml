@@ -9,10 +9,10 @@ toc:
     subitems:
       - name: Overview
         path: /how-to/overview
-      - name: How to boil an egg
-        path: /how-to/boil-egg
-      - name: My First Post
-        path: /tutorials/first-post
+      - name: How to make a list
+        path: /how-to/make-list
+      - name: Demo Post
+        path: /tutorials/demo-post
   - heading: How-to Guides
     subitems:
       - name: Overview

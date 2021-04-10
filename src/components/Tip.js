@@ -20,7 +20,7 @@ const TipStyles = styled.div`
 export const Tip = ({ children }) => {
   return (
     <TipStyles>
-      <img src={ClipboardIcon} />
+      <img src={ClipboardIcon} alt="tip" />
       <span>Tip!</span>
       <p>{children}</p>
     </TipStyles>

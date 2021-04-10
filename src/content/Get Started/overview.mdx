@@ -4,4 +4,11 @@ date:
 path: /get-started/overview
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This documentation template project uses Gatsby and a few plugins to create content.
+
+See the [demo page](/tutorials/demo-post) for an example of components and styles.
+
+- **Content Authoring:** Content pages use Markdown syntax in MDX files so that you can focus on writing while still using components when they're handy.
+- **Styles:** Styles primarily come from the global.css file. CSS custom properties make themeing and editing styles simple. A few pages and components also use styled-components. This makes it easy to customize some components as needed without cluttering the global css file.
+- **Site Navigation**: The side-bar navigation is built using the toc.yaml file. As it is set up currently, this requires a little manual work when adding or removing links, but it provides good customization for re-ordering things.
+- **SEO**: The site uses React Helmet for SEO. Pass props to the SEO component to override defaults. This component is also used to set the theme with React Context.

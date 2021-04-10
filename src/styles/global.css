@@ -121,7 +121,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 3rem;
   border-bottom: 1px solid var(--rules);
   margin-bottom: 2rem;
 }
@@ -136,9 +136,29 @@ header nav a {
   color: var(--textColor);
 }
 
+h2:hover > a.anchor,
+h3:hover > a.anchor,
+h4:hover > a.anchor {
+  visibility: visible;
+}
+
 a:hover {
   color: var(--pop);
 }
+
+a.anchor {
+  margin-left: 10px;
+  fill: var(--pop);
+  visibility: hidden;
+}
+
+a.anchor svg {
+  transform: scale(1.5) rotate(327deg);
+}
+
+/* a.anchor:hover svg {
+  fill: coral;
+} */
 
 header nav a + a {
   margin-left: 20px;
@@ -151,6 +171,7 @@ footer {
   align-items: center;
   border-top: 1px solid var(--rules);
   margin-top: 2rem;
+  margin-bottom: auto;
 }
 
 #logo {

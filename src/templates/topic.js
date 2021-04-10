@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Layout } from "../components/Layout";
 import SEO from "../components/SEO";
@@ -22,18 +22,16 @@ const BreadCrumb = (props) => {
   crumbs.shift();
   crumbs.pop();
 
-  console.log(crumbs);
   let cleanCrumbs = crumbs.map((crumb) => {
     let parts = crumb.split("-");
     let cleanParts = parts.join(" ");
     return cleanParts;
   });
 
-  console.log(cleanCrumbs);
   return (
     <CrumbStyles>
       {cleanCrumbs.map((crumb) => (
-        <span>{crumb} &gt; </span>
+        <span key={crumb}>{crumb} &gt; </span>
       ))}
       <span className="you-are-here">{props.title}</span>
     </CrumbStyles>

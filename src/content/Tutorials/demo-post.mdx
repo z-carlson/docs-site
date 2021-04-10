@@ -1,38 +1,52 @@
 ---
-title: My First Post
+title: Demo Post
 date: 2019-07-10
-path: /tutorials/first-post
+path: /tutorials/demo-post
 ---
 
 import { Tip } from "../../components/Tip";
 import { Warning } from "../../components/Warning.js";
 
-This is my first MDX file with Gatsby! Super neat! Here is some nice body text.
+This page demonstrates some of the basic features and functionality of this help site.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit cursus risus at ultrices mi tempus imperdiet. Et malesuada fames ac turpis egestas.
+Since this is MDX, we can use a `<Tip>` component for helpful suggestions.
 
 <Tip>
-  Eget arcu dictum varius duis at consectetur lorem. Amet facilisis magna etiam
-  tempor orci eu lobortis. Elementum pulvinar etiam non quam lacus suspendisse
-  faucibus interdum posuere.
+  Here is some extra information that you might find helpful. However, feel free
+  to ignore it.
 </Tip>
 
-Before you begin, you will need the following:
+There is also a `<Warning>` component for more serious information.
 
-- this thing
-- some other thing
+<Warning>Don't ignore this! It is important information!</Warning>
 
-![ flower](../../images/MVIMG_20180823_180705.jpg)
+We also have a custom codeblock component so that we can have nice syntax highlighting in code samples. Click the clipboard to copy the code.
 
-Eget arcu dictum varius duis at consectetur lorem. Amet facilisis magna etiam tempor orci eu lobortis. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Elementum sagittis vitae et leo. Ipsum dolor sit amet consectetur adipiscing. Sit amet risus nullam eget. Neque vitae tempus quam pellentesque nec nam aliquam sem. Luctus accumsan tortor posuere ac ut consequat. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat.
+You can change the syntax highlighting theme based on the overall site theme as well. Try clicking the Sun/Moon icon at the very top of the page to see.
+
+```js
+let sandwich = "grilled rachel";
+
+function testing() {
+  let three = 1 + 2;
+  return three;
+}
+```
+
+Gatsby provides many nice features by default:
+
+- Lazy loading images
+- Fast loading pages
+
+The rest of the page is just filler content demonstrating some styles and heading levels. Thanks for exporing the project!
 
 ## Here is a heading 2
 
-<Warning>
-  Eget arcu dictum varius duis at consectetur lorem. Amet facilisis magna etiam
-  tempor orci eu lobortis. Elementum pulvinar etiam non quam lacus suspendisse
-  faucibus interdum posuere.
-</Warning>
+![flower](../../images/MVIMG_20180823_180705.jpg)
+
+Eget arcu dictum varius duis at consectetur lorem. Amet facilisis magna etiam tempor orci eu lobortis. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Elementum sagittis vitae et leo. Ipsum dolor sit amet consectetur adipiscing. Sit amet risus nullam eget. Neque vitae tempus quam pellentesque nec nam aliquam sem. Luctus accumsan tortor posuere ac ut consequat. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat.
+
+### A sample heading 3
 
 Bibendum enim facilisis gravida neque convallis a cras semper auctor. Purus faucibus ornare suspendisse sed nisi. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. Ornare massa eget egestas purus viverra accumsan in nisl. Eleifend quam adipiscing vitae proin. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Placerat vestibulum lectus mauris ultrices eros in cursus turpis. Mattis nunc sed blandit libero volutpat. Urna molestie at elementum eu. Vulputate mi sit amet mauris commodo. Felis donec et odio pellentesque. Ut consequat semper viverra nam libero justo. Nam at lectus urna duis convallis convallis tellus id interdum. Nunc sed velit dignissim sodales ut eu sem integer. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. Dolor sit amet consectetur adipiscing. Mattis rhoncus urna neque viverra justo nec ultrices.
 
@@ -42,13 +56,23 @@ Bibendum enim facilisis gravida neque convallis a cras semper auctor. Purus fauc
 
 ### This is a heading 3
 
-```JavaScript
+```javascript
 function test() {
-  return 'test';
+  return "test";
 }
 ```
 
 Enim nec dui nunc mattis enim ut. Dictum at tempor commodo ullamcorper a. Vivamus at augue eget arcu dictum. Turpis massa tincidunt dui ut ornare lectus sit amet. Tortor pretium viverra suspendisse potenti nullam. Nec sagittis aliquam malesuada bibendum. Cursus metus aliquam eleifend mi in nulla posuere. Aenean et tortor at risus viverra adipiscing at. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Mi bibendum neque egestas congue quisque.
+
+```js
+let theme = "not working";
+
+function checkTheme(theme) {
+  console.log(theme);
+}
+
+checkTheme(theme);
+```
 
 1. Step one, go do the thing.
 1. For the second step, do the second thing that you do.

@@ -15,8 +15,8 @@ export default function ProductLanding() {
               <Link to={"/get-started/overview"}>
                 <h3>Getting Started</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Welcome! Get started with setup, installation, and quick start
+                  guides.
                 </p>
               </Link>
             </div>
@@ -24,8 +24,8 @@ export default function ProductLanding() {
               <Link to={"/tutorials/overview"}>
                 <h3>Tutorials</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  New? These end-to-end walkthroughs will guide you through
+                  common, real-world problems.
                 </p>
               </Link>
             </div>
@@ -33,18 +33,15 @@ export default function ProductLanding() {
               <Link to={"/how-to/overview"}>
                 <h3>How-to Guides</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  How-to guides are short, step-by-step instructions on how to
+                  complete a specific task.
                 </p>
               </Link>
             </div>
             <div className="card">
               <Link to={"/reference/overview"}>
                 <h3>Reference</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                <p>Need to check the API or looking for something specific?</p>
               </Link>
             </div>
           </div>

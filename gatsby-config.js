@@ -3,6 +3,7 @@ module.exports = {
     title: "Docs Template",
     description: "Lovely Gatsby Documentation Site",
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-remark-images`,
     {
@@ -15,6 +16,12 @@ module.exports = {
               maxWidth: 1200,
             },
           },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              isIconAfterHeader: true,
+            },
+          },
         ],
       },
     },
@@ -22,7 +29,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
-    // "gatsby-plugin-mdx",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -20,11 +20,12 @@ export const LeftNav = styled.aside`
 
   details:hover {
     cursor: pointer;
+    color: var(--pop);
   }
 
-  details:focus {
+  summary:focus {
     outline: none;
-    outline-width: 0;
+    background-color: var(--accent);
   }
 
   details ul {
@@ -33,9 +34,18 @@ export const LeftNav = styled.aside`
     padding-bottom: 0;
   }
 
+  details ul li a:focus {
+    outline: none;
+    background-color: var(--accent);
+  }
+
   a {
     color: var(--textColor);
     text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--pop);
   }
 
   a + a {
@@ -53,17 +63,17 @@ export const LeftNav = styled.aside`
   }
 `;
 
-export const TOC = (props) => {
+export const TOC = () => {
   return (
     <LeftNav className="left-nav">
       <nav>
-        {toc.map((group) => (
-          <details>
+        {toc.map((group, index) => (
+          <details key={index}>
             <summary className="heading">{group.heading}</summary>
             {group.subitems && (
               <ul className="subitems">
-                {group.subitems.map((item) => (
-                  <li>
+                {group.subitems.map((item, index) => (
+                  <li key={index}>
                     <Link to={item.path}>{item.name}</Link>
                   </li>
                 ))}
