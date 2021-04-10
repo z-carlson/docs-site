@@ -9,16 +9,15 @@ toc:
     subitems:
       - name: Overview
         path: /how-to/overview
-      - name: How to make a list
-        path: /how-to/make-list
+
       - name: Demo Post
         path: /tutorials/demo-post
   - heading: How-to Guides
     subitems:
       - name: Overview
         path: /how-to/overview
-      - name: How to boil an egg
-        path: /how-to/boil-egg
+      - name: How to make a list
+        path: /how-to/make-list
   - heading: References
     subitems:
       - name: running a blog
